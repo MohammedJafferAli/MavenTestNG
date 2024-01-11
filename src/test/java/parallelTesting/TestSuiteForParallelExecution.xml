@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Method Test Suite" parallel="methods" thread-count="3"> # thread count can be changed but needs to check the max count based on the processor
+    <test verbose="2" preserve-order="true" name="Parallel test scenario">
+        <classes>
+            <class name="parallelTesting.ParallelMethodExample">
+                <methods>
+                    <include name="testCase01"/>
+                    <include name="testCase02"/>
+                    <include name="testCase03"/>
+                    <include name="testCase04"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,8 @@
+
+Different ways to run tests in parallel
+
+1. Using Xml suite file
+    Run methods in parallel
+    Run Classes in parallel
+    Run Test inside a suite in parallel
+2. Run independent test methods in parallel
